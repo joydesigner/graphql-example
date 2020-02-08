@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pwcappkit-static.azureedge.net/cdn/release/3.5.1/vendor.min.css">
+
+  <!-- Latest compiled and minified CSS with default theme -->
+  <link rel="stylesheet" href="https://pwcappkit-static.azureedge.net/cdn/release/3.5.1/appkit.min.css">
+  <!-- Latest compiled and minified CSS with bright orange theme -->
+  <link rel="stylesheet" href="https://pwcappkit-static.azureedge.net/cdn/release/3.5.1/appkit.bright.orange.min.css">
+
+
+  <?!= include('peopleSearchStyle'); ?>
+</head>
+
+<body class="no-outline">
+  <div class="d-flex flex-column a-bg-f5f a-template-container">
+    <div class="a-header h-auto d-flex align-items-center a-px-20 flex-wrap flex-lg-nowrap">
+      <div class="d-flex height-50 align-items-center order-1 mr-2 mr-lg-0">
+        <div class="a-pwc-logo-grid a-md"></div>
+        <span class="divider a-mx-20"></span>
+        <div class="font-weight-medium a-nowrap">Latte</div>
+        <span class="divider a-mx-20 d-sm-inline-block"></span>
+      </div>
+      <div class="a-hfn-menu-container d-flex align-items-center height-50 order-4 order-lg-2">
+        <div class="a-responsive-tab responsive-tab-init h-100">
+          <div class="a-tab-header h-100 d-flex align-items-center">
+            <div class="move-ctrl to-left disabled">
+              <span class="appkiticon icon-left-chevron-circle-fill icon-size-16" tabindex="0"></span>
+            </div>
+            <div class="move-ctrl to-right">
+              <span class="appkiticon icon-right-chevron-circle-fill icon-size-16" tabindex="0"></span>
+            </div>
+            <div class="move-box float-left h-100">
+              <ul class="scroll-holder h-100">
+                <div class="active-bar"></div>
+                <li class="tab-item active" tabindex="0">
+                  <button class="a-btn a-btn-secondary a-btn-lg">
+                    <span class="appkiticon icon-venn-abc-outline a-btn-icon"></span>
+                    Primary Industry</button>
+                </li>
+                <li class="tab-item" tabindex="0">
+                  <button class="a-btn a-btn-secondary a-btn-lg">
+                    <span class="appkiticon icon-bubble-plot-outline a-btn-icon"></span>
+                    Area of Expertise
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="a-input-with-icon ml-auto a-lf w-auto order-3 a-order-sm-2" id="a-hfn-search-bar-small">
+        <div class="a-input-with-icon">
+          <input aria-label="search box" class="a-text-input" placeholder="Search" tabindex="0">
+          <span class="a-icon appkiticon icon-search-outline a-text-9e9"></span>
+        </div>
+      </div>
+
+      <div class="d-flex height-50 align-items-center order-2 order-lg-3 a-header-set">
+        <div class="a-input-with-icon a-input-md a-lf w-auto a-cursor-pointer" id="search-icon-sm" tabindex="0">
+          <span class="appkiticon icon-search-outline"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="a-template-content a-bg-f5f" id="hfn-content-container"></div>
+    <div class="footer-wrapper flex-shrink-0 a-p-10 text-center a-bg-f5f">
+      <div class="a-footer">© 2020 PwC. PwC refers to the PwC network and/or one or more of its member
+        firms,
+        each of which is a separate legal entity. Please see www.pwc.com/structure for further details.
+      </div>
+    </div>
+  </div>
+  <!-- Latest compiled and minified JavaScript for vendors -->
+  <script src="https://pwcappkit-static.azureedge.net/cdn/release/3.5.1/vendor.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://pwcappkit-static.azureedge.net/cdn/release/3.5.1/appkit.min.js"></script>
+  <?!= include('peopleSearchJs'); ?>
+</body>
+
+</html>
